@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h3>
+    @ViewData["message"]
+</h3>
+
+<div>
+    <ol>
+    @foreach(dynamic item in ViewBag.Courses)
+    {
+        <li>
+            @item
+        </li>
+    }
+    </ol>
+</div>
